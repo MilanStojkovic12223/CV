@@ -1,0 +1,676 @@
+main.scss
+
+@import '_config.scss';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $boja1;
+}
+.cleaner{
+    clear: both;
+}
+header{
+    border-bottom: 1.5px solid $ColorLink1;
+    z-index: 1;
+    top:0%; 
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background-color: $boja2;
+    #logo{
+        margin-top: 30px;
+            margin-left: 30px;
+            width: 40px;
+        #logoIMG{
+            width: 100%;
+        }
+    }
+    
+}
+
+nav{
+    ul{
+        margin-left: 70px;
+        li{
+            margin-top: -10px;
+            list-style: none;
+            float: right;
+            position: relative;
+            margin-right: 70px;
+        }
+    }
+    a{
+        color: $ColorLink1;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+        top: -15px;
+    }
+}
+#main{
+    width: 100%;
+    margin-top: 0px;
+    background-color: $boja1;
+    position: relative;
+}
+#bgimg{
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-top: 80px;
+    height: 600px;
+    background-image: url('../img/pexels-dominika-roseclay-1036808.jpg');
+    background-size:cover ;
+    background-color: black;
+    #cap1{
+        position: relative;
+        display: inline-block;
+        width: 750px;
+        height: auto;
+        left: 47%;
+        top: 25%;
+        margin-right: 5px;
+        h1{
+            font-size: 45px;
+            color: $ColorLink3;
+        }
+    }
+    
+}
+
+.maintext{
+    color: $ColorLink1;
+    text-align: center;
+}
+#dd{
+    width: 100%;
+}
+
+  #about{
+    position: relative;
+    width: 100%;
+    height: 570px;
+    background-color: $boja2;
+    text-align: center;
+    .flexy{
+        @include flexy;
+        #drzac{
+            margin-right: 20px;
+            color: $ColorLink1;
+            text-align: center;
+            img{
+                width: 400px;
+            }
+        }
+        .sit{
+            padding-top: 40px;
+            margin: 20px;
+            display: inline-block;   
+            height: 250px;
+            width: 750px;
+            font-size: 30px;
+            margin-top: 30px;
+            margin-right: 35px;
+            color: $ColorLink1;
+            border: 2px 2px solid black;
+           .autortext{
+            text-align: left;
+            margin-top: 20px;
+            color: $ColorLink3;
+           }
+        }
+    }
+  }
+
+  #services{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    background-color: $boja1;
+    .flexy{
+        @include flexy;
+        .flexy1{
+            @include flexy;
+            .kutija{
+                @include box;
+                width: 300px;
+                height: 330px;
+                background-color: $boja2;
+                i{
+                    font-size: 60px;
+                    margin-top: 5px;
+                    color: $ColorLink1;
+                }
+                h2{
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                    color: $ColorLink1;
+                }
+                p{
+                    font-size: 20px;
+                    color: $ColorLink3;
+                }
+            }
+        }
+    }
+    
+  }
+  
+#skills{
+    position: relative;
+    width: 100%;
+    height: 480px;
+    background-color: $boja2;
+    text-align: center;
+        .kutijas{
+        
+            #htmlprog{
+                background: linear-gradient(90deg, $ColorLink3 0%, $TransColor 95%, rgb(255, 255, 255) 100%);
+                @include progress;
+                display: flex;
+                i{
+                    @include icon;
+                }
+                p{
+                    @include percent;
+                }
+            }
+            #cssprog{
+                background: linear-gradient(90deg, $ColorLink3 0%, $TransColor 90%, rgb(255, 255, 255) 100%);
+                @include progress;
+                display: flex;
+                i{
+                    @include icon;
+                }
+                p{
+                    @include percent;
+                }
+            }
+            #sqlprog{
+                background: linear-gradient(90deg, $ColorLink3 0%, $TransColor 80%, rgb(255, 255, 255) 100%);
+                @include progress;
+                display: flex;
+                i{
+                    @include icon;
+                }
+                p{
+                    @include percent;
+                }
+            }
+            #jsprog{
+                background: linear-gradient(90deg, $ColorLink3 0%, $TransColor 50%, rgb(255, 255, 255) 100%);
+                @include progress;
+                display: flex;
+                i{
+                    @include icon;
+                }
+                p{
+                    @include percent;
+                }
+            }
+            
+            width: 100%;
+            height: 100px;
+            h2{
+                margin-left: 50px;
+                text-align: left;
+                color: $ColorLink1;
+            }
+        }
+    
+}
+
+#projects{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    text-align: center;
+    background-color: $boja1;
+    .flexy{
+        @include flexy;
+        .kutijap{
+            overflow: hidden;
+            @include box;
+            width: 42%;
+            img{  
+                &:hover{
+                    -moz-transform: scale(1.2);
+                    -webkit-transform: scale(1.2);
+                    transform: scale(1.2);
+                }             
+                border-radius: 25px;
+                width: 100%;
+                -moz-transition: all 0.3s;
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+                position: relative;
+            }   
+        }
+    }
+}
+
+#contacts{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background-color: $boja2;
+}
+
+//footer
+
+#footer{
+    width: 100%;
+    height: 105px;
+    background-color: black;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    p{
+        color: $boja2;
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+    .icons{
+        a{
+            color: $boja2;
+            text-decoration: none;
+            position: relative;
+            margin-left: 40px;
+            text-align: center;
+        }
+        margin-bottom: 20px;
+    }
+}
+//forma
+#contacts{
+    form{
+        .textInput{
+            width: 35%;
+            height: 30px;
+            text-align: center;
+            box-shadow: 1px 1px 1px 1px gray;
+            border-radius: 5px;
+        }
+        textarea{
+            width: 35%;
+            height: 80px;
+            text-align: center;
+            box-shadow: 1px 1px 1px 1px gray;
+            border-radius: 5px;
+        }
+        .InputService{
+            font-size: 25px;
+            color: $ColorLink3;
+        }
+        .check{
+            color: $ColorLink3;
+            font-size: 25px;
+            user-select: none;
+        }
+        .button{
+            width: 80px;
+            height:40PX;
+            background-color: #3c78d6;
+            color:white;
+            border-radius: 5px;
+        }
+
+    }
+}
+
+_config.scss
+
+
+@mixin box{
+    margin: 20px;
+    display: inline-block;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+@mixin progress{
+    color: white;
+    width: 80%;
+    border-radius: 20px;
+    height: 50px
+}
+
+@mixin icon{
+    margin-left: 65px;
+    margin-top: 5px;
+    font-size: 40px;
+    color: $boja2;
+}
+
+@mixin percent{
+    font-size: 30px;
+    margin-left: 40%;
+    margin-top: 5px;
+}
+
+responsive.scss
+
+
+@media screen and (max-width:1700px){
+    #projects{
+        height: 450px;
+    }
+}
+
+@media screen and (max-width:1450px){
+    #projects{
+        height: 400px;
+    }
+    #bgimg{
+        #cap1{
+            left: 30%;
+        }
+    }
+}
+
+@media screen and (max-width:1380px){
+    #services{
+        height: 800px;
+        .flexy{
+            display: block;
+            .flexy1{
+                .kutija{
+                    margin-left: 90px;
+                    margin-right: 90px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1250px){
+    #projects{
+        height: 350px;
+    }
+    #bgimg{
+        #cap1{
+            left: 20%;
+        }
+    }
+    #about{
+        height: 1150px;
+        .flexy{
+            display: block;
+            .sit{
+                padding: 0%;
+                margin-top: 0px;
+                margin-bottom: 10px;
+                font-size: 35px;
+            }
+            #drzac{
+                img{
+                    width: 500px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1150px){
+    nav{
+        ul{
+            li{
+                margin-right: 30px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1000px){
+    #services{
+        .flexy{
+            .flexy1{
+                text-align: center;
+                .kutija{
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+    #bgimg{
+        #cap1{
+            left: 10%;
+        }
+    }
+
+    nav{
+        li{
+            margin-right: 30px;
+        }
+    }
+
+    #projects{
+        height: 900px;
+        .flexy{
+            flex-direction: column;
+            .kutijap{
+                width: 80%;
+                margin-left: 10%;
+            }
+        }
+    }
+    #dd{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:850px){
+    #projects{
+        height: 800px;
+    }
+    nav{
+        ul{
+            li{
+                margin-right: 10px;
+            }
+        }
+        a{
+            font-size: 15px;
+        }
+    }
+
+    #bgimg{
+        #cap1{
+            left: 0%;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    #about{
+        .flexy{
+            display: block;
+            .sit{
+                padding: 0%;
+                margin-top: 0px;
+                margin-bottom: 10px;
+                font-size: 30px;
+                width: 500px;
+            }
+        }
+    }
+    #contacts{
+        form{
+            .textInput{
+                width: 55%;
+            }
+            textarea{
+                width: 55%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:603px){
+    #projects{
+        height: 600px;
+    }
+    #services{
+        height: 1530px;
+        .flexy{
+            .flexy1{
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:580px){
+    nav{
+        ul{
+            li{
+                margin-top: -20px;
+            }
+        }
+    }
+    #about{
+        height: 950px;
+        .flexy{
+            .sit{
+
+                margin-bottom: 10px;
+                font-size: 20px;
+                width: 300px;
+            }
+            #drzac{
+                img{
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:430px){
+    #projects{
+        height: 500px;
+    }
+    #bgimg{
+        #cap1{
+            top: 45%;
+            h1{
+                font-size: 30px;
+            }
+        }
+    }
+
+    #about{
+        height: 750px;
+        .flexy{
+            .sit{
+
+                margin-bottom: 10px;
+                font-size: 18px;
+                width: 300px;
+            }
+            #drzac{
+                img{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:355px){
+    #about{
+        height: 650px;
+        .flexy{
+            .sit{
+
+                margin-bottom: 10px;
+                font-size: 17px;
+                width: 230px;
+            }
+            #drzac{
+                img{
+                    width: 230px;
+                }
+            }
+        }
+    }
+    #footer{
+        .icons{
+            a{
+                margin-left: 20px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:306px){
+    #projects{
+        height: 400px;
+    }
+    nav{
+        ul{
+            li{
+                margin-right: 5px;
+            }
+            a{
+                font-size: 12px;
+            }
+        }
+    }
+    #services{
+        height: 1300px;
+        .flexy{
+            .flexy1{
+                .kutija{
+                    width: 250px;
+                    height: 275px;
+                    i{
+                        font-size: 67px;
+                    }
+                    h2{
+                        font-size: 27px;
+
+                    }
+                    p{
+                        font-size: 17px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:290px){
+    #about{
+        height: 650px;
+        .flexy{
+            .sit{
+
+                margin-bottom: 10px;
+                font-size: 17px;
+                width: 200px;
+            }
+            #drzac{
+                img{
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

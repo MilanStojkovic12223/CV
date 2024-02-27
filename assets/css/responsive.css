@@ -1,0 +1,219 @@
+@media screen and (max-width: 1700px) {
+  #projects {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  #projects {
+    height: 400px;
+  }
+  #bgimg #cap1 {
+    left: 30%;
+  }
+}
+@media screen and (max-width: 1380px) {
+  #services {
+    height: 800px;
+  }
+  #services .flexy {
+    display: block;
+  }
+  #services .flexy .flexy1 .kutija {
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  #projects {
+    height: 350px;
+  }
+  #bgimg #cap1 {
+    left: 20%;
+  }
+  #about {
+    height: 1150px;
+  }
+  #about .flexy {
+    display: block;
+  }
+  #about .flexy .sit {
+    padding: 0%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 35px;
+  }
+  #about .flexy #drzac img {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  nav ul li {
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #services .flexy .flexy1 {
+    text-align: center;
+  }
+  #services .flexy .flexy1 .kutija {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #bgimg #cap1 {
+    left: 10%;
+  }
+  nav li {
+    margin-right: 30px;
+  }
+  #projects {
+    height: 900px;
+  }
+  #projects .flexy {
+    flex-direction: column;
+  }
+  #projects .flexy .kutijap {
+    width: 80%;
+    margin-left: 10%;
+  }
+  #dd {
+    display: flex;
+  }
+}
+@media screen and (max-width: 850px) {
+  #projects {
+    height: 800px;
+  }
+  nav ul li {
+    margin-right: 10px;
+  }
+  nav a {
+    font-size: 15px;
+  }
+  #bgimg #cap1 {
+    left: 0%;
+    width: 100%;
+    text-align: center;
+  }
+  #about .flexy {
+    display: block;
+  }
+  #about .flexy .sit {
+    padding: 0%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    width: 500px;
+  }
+  #contacts form .textInput {
+    width: 55%;
+  }
+  #contacts form textarea {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 603px) {
+  #projects {
+    height: 600px;
+  }
+  #services {
+    height: 1530px;
+  }
+  #services .flexy .flexy1 {
+    display: block;
+  }
+}
+@media screen and (max-width: 580px) {
+  nav ul li {
+    margin-top: -20px;
+  }
+  #about {
+    height: 950px;
+  }
+  #about .flexy .sit {
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 300px;
+  }
+  #about .flexy #drzac img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 430px) {
+  #projects {
+    height: 500px;
+  }
+  #bgimg #cap1 {
+    top: 45%;
+  }
+  #bgimg #cap1 h1 {
+    font-size: 30px;
+  }
+  #about {
+    height: 750px;
+  }
+  #about .flexy .sit {
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 300px;
+  }
+  #about .flexy #drzac img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 355px) {
+  #about {
+    height: 650px;
+  }
+  #about .flexy .sit {
+    margin-bottom: 10px;
+    font-size: 17px;
+    width: 230px;
+  }
+  #about .flexy #drzac img {
+    width: 230px;
+  }
+  #footer .icons a {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 306px) {
+  #projects {
+    height: 400px;
+  }
+  nav ul li {
+    margin-right: 5px;
+  }
+  nav ul a {
+    font-size: 12px;
+  }
+  #services {
+    height: 1300px;
+  }
+  #services .flexy .flexy1 .kutija {
+    width: 250px;
+    height: 275px;
+  }
+  #services .flexy .flexy1 .kutija i {
+    font-size: 67px;
+  }
+  #services .flexy .flexy1 .kutija h2 {
+    font-size: 27px;
+  }
+  #services .flexy .flexy1 .kutija p {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 290px) {
+  #about {
+    height: 650px;
+  }
+  #about .flexy .sit {
+    margin-bottom: 10px;
+    font-size: 17px;
+    width: 200px;
+  }
+  #about .flexy #drzac img {
+    width: 200px;
+  }
+}/*# sourceMappingURL=responsive.css.map */

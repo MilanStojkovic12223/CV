@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="CV, Curriculum Vitae"/>
+    <meta name="author" content="Milan Stojković"/>
+    <meta name="language" content="English"/>
+    
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="/assets/img/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9343e2a586.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="logo">
+                <a href="#"><img src="assets/img/logo.png" alt="logo" id="logoIMG"/></a>
+            </div>
+            <nav>
+                <ul>
+                    <li ><a href="#contacts">CONTACT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#">HOME</a></li>
+                </ul>
+            </nav>
+            <div class="cleaner"></div>
+        </header>
+
+        <div id="main"></div>
+
+
+            <div id="bgimg">
+                <div id="cap1">
+                    <h1>Professional Web designer, Database manager, Front-end and Back-end programmer.</h1>
+                </div>
+            </div>
+
+            <div id="about">
+                <h1 class="maintext">ABOUT ME</h1>
+                <div class="flexy">
+                    <div id="drzac">
+                        <img src="assets/img/Autor1.JPG" alt="autor" id="AutorIMG"/>
+                        
+                    </div>
+                    <div class="sit">
+                        <h2>Milan Stojković</h2>
+                        <p class="autortext">I&#39;m Milan and I work as a web developer. As a web developer, I thrive on the challenge of turning complex ideas into seamless user journeys. The web is my canvas, and I love exploring its potential to create something truly unique.</p>
+                        <p class="autortext">Phone: 064 6459812<br>Email: MilanS@gmail.com<br>Experience: 1 year <br>lemguages: Serbian, English, German</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="services">
+                <h1 class="maintext">SERVICES</h1>
+                <div class="flexy">
+                    <div class="flexy1">
+                        <div class="kutija">
+                           <i class="fa-solid fa-users"></i>
+                            <h2>Front-end</h2>
+                            <p> front-end developer builds the front-end portion of websites and web applications—the part users see and interact with.</p>
+                        </div>
+                        <div class="kutija">
+                            <i class="fa-solid fa-database"></i>
+                            <h2>Database</h2>
+                            <p>Database Management allows a person to organize, store, and retrieve data from a computer. It can also describe the data storage, operations, and security practices of a database administrator.</p>
+                        </div>
+                    </div>
+                
+                <div class="flexy1">    
+                    <div class="kutija">
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Back-end</h2>
+                        <p>Back-end developers are the experts who build and maintain the mechanisms that process data and perform actions on websites.</p>
+                    </div>
+                    <div class="kutija">
+                        <i class="fa-solid fa-object-group"></i>
+                        <h2>Web design</h2>
+                        <p>Web design blends visuals, layout, and function to craft user-friendly online experiences. From websites to apps, they orchestrate the look, feel, and flow.</p></div>
+                        <div class="cleaner"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="skills">
+                <h1 class="maintext">SKILLS</h1>
+                <div class="flexy">
+                    <div class="kutijas">
+                        <h2>HTML</h2>
+                        <div id="htmlprog"> 
+                            <i class="fa-brands fa-html5"></i>
+                            <p class="percent">95%</p>
+                        </div>
+                    </div>
+                    <div class="kutijas">
+                        <h2>CSS</h2>
+                        <div id="cssprog"> 
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <p class="percent">90%</p>
+                        </div>
+                    </div>
+                    <div class="kutijas">
+                        <h2>SQL</h2>
+                        <div id="sqlprog">
+                            <i class="fa-solid fa-database"></i>
+                            <p class="percent">80%</p>
+                        </div>
+                    </div>
+                    <div class="kutijas">
+                        <h2>JAVA SCRIPT</h2>
+                        <div id="jsprog">
+                            <i class="fa-brands fa-js"></i>
+                            <p class="percent">50%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="projects">
+                <h1 class="maintext">PROJECTS</h1>
+                <div id="dd">
+                    <div class="flexy">
+                        <div class="kutijap">
+                            <img src="assets/img/sajt1.JPG" alt="site1" id="AutorIMG"/>
+                        </div>
+
+                        <div class="kutijap">
+                            <img src="assets/img/sajt2.JPG" alt="site2" id="AutorIMG"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contacts">
+                <h1 class="maintext">CONTACT</h1>
+                <form target="_blank" action="index.php" method="post">
+                    <input type="text" class="textInput" id="name" name="name" placeholder="name" required><br><br>
+                    <input type="text" class="textInput" id="surname" name="surname" placeholder="surname" required><br><br>
+                    <input type="email" class="textInput" id="mail" name="mail" placeholder="Email" required><br><br>
+                    <input type="text" class="textInput" id="number" name="number" placeholder="Phone" required><br>
+                    <div class="radioBtnList">
+                        <br>
+                        <label class="InputService"><b>SERVICES:</b></label><br>
+                        <input id="Front-end" type="checkbox" name="checkbox" value="Front-end">
+                        <label class="check" for="Front-end">Front-end</label>
+                        <input id="Back-end" type="checkbox" name="checkbox" value="Back-end">
+                        <label class="check" for="Back-end">Back-end</label></div><br>
+                        <input id="Database" type="checkbox" name="checkbox" value="Database">
+                        <label class="check" for="Database">Database</label>
+                        <input id="Web-design" type="checkbox" name="checkbox" value="Web-design">
+                        <label class="check" for="Web-design">Web design</label><br><br>
+                        <textarea class="textInput2" name="Message" placeholder="Additional information."></textarea>
+                    <br><br>
+                    <button class="button" type="submit">Send</button>
+                    <button class="button" type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="footer">
+                <p>Socijalne mreže</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="sitemap.xml" target="_blank"><i class="fa-solid fa-sitemap"></i></a>
+                <a href="scss.txt" target="_blank"><i class="fa-brands fa-sass"></i></a>
+                <div class="cleaner"></div>
+            </div>
+            <p>&copy; 2024 Milan Stojković</p>
+        </div>
+    </div>
+
+    </div>
+    
+</body>
+</html>
